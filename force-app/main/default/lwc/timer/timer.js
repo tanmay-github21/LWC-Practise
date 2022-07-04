@@ -7,17 +7,16 @@ export default class Timer extends LightningElement {
     @track time; 
     connectedCallback()
     {
-        setTimeout(() => {
-           this.showTime(); 
-        }, 1000);
-        
+        // setTimeout(this.showTime,1000); 
+        const timeValue=setTimeout();
+
     }
     timeOutFunction()
     {
 
-        const timeOut= setTimeout();
+        // const timeOut= setCall_Time(function(){this.showTime()}.bind(this),1000);
     }
-    showTime()
+     showTime()
     {
         let date=new Date(); 
         let duration="Am";
@@ -30,5 +29,7 @@ export default class Timer extends LightningElement {
         this.seconds=(this.seconds<10) ? "0"+this.seconds :this.seconds; 
         console.log('Hours',this.hours+'\n'+'Minutes'+'\t'+this.minutes+'\n'+'Seconds'+'\t'+this.seconds);
         this.time=this.hours+":"+this.minutes+":"+this.seconds;
+        var date1= new date(); 
+        var h= date1.getUtcHours();
     }
 }
