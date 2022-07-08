@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sprint_Count__c</fullName>
+    <description>Number of sprints required in case the project is a agile type project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of sprints required in case the project is a agile type project</inlineHelpText>
+    <label>Number Of Sprints</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

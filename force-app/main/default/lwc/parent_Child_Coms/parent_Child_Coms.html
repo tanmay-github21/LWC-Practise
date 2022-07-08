@@ -1,0 +1,12 @@
+<template>
+    <h1>Parent Component</h1>
+     <lightning-card>
+         <lightning-button label="Show Active Accounts" onclick={show_Active}></lightning-button> 
+         <lightning-button label="Show Inactive Accounts" onclick={show_Inactive}></lightning-button>
+         <lightning-button label="Show" onclick={showValue} value={user_Input}></lightning-button>
+         <template if:true={accounts}>
+              <!-- <lightning-datatable key-field="id" data={accounts} columns={columns}></lightning-datatable> -->
+              <c-child-Parent-Coms></c-child-Parent-Coms>
+         </template>
+     </lightning-card>
+</template>

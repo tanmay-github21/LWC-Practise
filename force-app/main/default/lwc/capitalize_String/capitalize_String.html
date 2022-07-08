@@ -1,0 +1,8 @@
+<template>
+     <!-- <p>Hello, {user_Input}</p>     -->
+     <lightning-card title="Capitalize Input">
+        Hello  <p style="text-transform:uppercase">  {user_Input} </p>
+          <lightning-input label="Name" value={user_Input} onchange={nameChange}></lightning-input>
+        <p style="text-align: justify;">This is Justified Allignment</p>  
+    </lightning-card>
+</template>
